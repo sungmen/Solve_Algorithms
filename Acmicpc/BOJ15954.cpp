@@ -2,7 +2,6 @@
 #include <vector>
 #include <cmath>
 using namespace std;
-
 int main(){
 	int n, k;
 	scanf("%d%d", &n,&k);
@@ -11,21 +10,21 @@ int main(){
 	for(int i = 0; i < n; i++) {
 		scanf("%d", &v[i]);
 	}
-	for(int i = 0; i < n - k + 1; i++) {
-		for(int m = k; m < n - i + 1; m++) {
-			int sum = 0;
+	for(int i = 0; i <= n - k; i++) {
+		for(int m = k; m <= n - i; m++) {
+			double sum = 0;
 			for(int j = i; j < m + i; j++) {
 				sum += v[j];
 			}
 			double ave = (double)sum/(double)m;
-			double dis = 0.0;
+			sum = 0.0;
 			for(int j = i; j < m + i; j++) {
-				dis += (v[j]-ave)*(v[j]-ave);
+				sum += (v[j]-ave)*(v[j]-ave);
 			}
-			dis = sqrt(dis/(double)m);
-			min = min > dis ? dis : min;
+			sum = sqrt(sum/(double)m);
+			min = min > sum ? sum : min;
 		}
 	}
 	printf("%.11lf\n", min);
-	return 0;
+    return 0;
 }
