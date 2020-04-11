@@ -7,3 +7,4 @@ def solution(participant, completion):
             return participant[i]
         l = i
     return participant[l+1]
+    
