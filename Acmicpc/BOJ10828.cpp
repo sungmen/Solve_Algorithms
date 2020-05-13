@@ -1,28 +1,27 @@
-#include <iostream>
-
-using namespace std;
+#include <cstdio>
 
 int stk[10001];
+char command[6];
 
 int main() {
     int N;
     scanf("%d", &N);
     int cnt = 0;
     while(N--) {
-        string com;
-        cin >> com;
-        if(com == "push") {
-            int X; 
-            cin >> X;
-            stk[cnt++] = X;
-        } else if (com == "pop") {
-            printf("%d\n", cnt?stk[--cnt]:-1);
-        } else if (com == "size") {
+        scanf("%s", command);
+        switch(command[0]){
+        case 'p':
+            command[1] == 'u' ? scanf("%d", &stk[cnt++]):printf("%d\n", cnt?stk[--cnt]:-1);
+            break;
+        case 's':
             printf("%d\n", cnt);
-        } else if (com == "empty") {
+            break;
+        case 'e':
             printf("%d\n", cnt?0:1);
-        } else if (com == "top") {
+            break;
+        case 't':
             printf("%d\n", cnt?stk[cnt-1]:-1);
+            break;
         }
     }
 
