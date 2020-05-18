@@ -1,4 +1,4 @@
-#include <cstdio>
+#include <stdio.h>
 
 int stk[2000001];
 char command[6];
