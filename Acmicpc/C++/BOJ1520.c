@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <memory.h>
 int arr[501][501];
-int dp[501][501] = {-1};
+int dp[501][501];
 int x, y;
 int dfs(int n, int m) {
     if(dp[n][m] != -1) return dp[n][m];
