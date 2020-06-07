@@ -6,7 +6,7 @@
 #include <cstring>
 #include <vector>
 #include <map>
-#include <stack
+#include <stack>
 using namespace std;
 typedef long long ll;
 
