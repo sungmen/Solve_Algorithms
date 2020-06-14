@@ -1,5 +1,6 @@
-# Solve Algorithms
+
 [![Run on Repl.it](https://repl.it/badge/github/sungmen/AlgorithmStudy)](https://repl.it/github/sungmen/AlgorithmStudy)
+# Solve Algorithms
 ---------------
 Solve Algorithm and DataStrutcture in <br>
 [Baekjoon](https://www.acmicpc.net/)<br>
