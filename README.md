@@ -1,5 +1,5 @@
 
-[![Run on Repl.it](https://repl.it/badge/github/sungmen/AlgorithmStudy)](https://repl.it/github/sungmen/AlgorithmStudy)
+[![Run on Repl.it](https://repl.it/badge/github/sungmen/AlgorithmStudy)](https://repl.it/github/sungmen/SolveAlgorithms)
 # Solve Algorithms
 ---------------
 Solve Algorithm and DataStrutcture in <br>
