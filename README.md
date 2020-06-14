@@ -1,3 +1,4 @@
+[![Run on Repl.it](https://repl.it/badge/github/sungmen/Solve_Algorithms)](https://repl.it/github/sungmen/Solve_Algorithms)
 # Solve Algorithms
 
 Solve Algorithm and DataStrutcture in <br>
