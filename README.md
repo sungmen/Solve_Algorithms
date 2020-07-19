@@ -10,3 +10,19 @@ Solve Algorithm and DataStrutcture in <br>
 [ProjectEuler](https://projecteuler.net/)<br>
 [SWExpertAcademy](https://swexpertacademy.com/)<br>
 Using Language C/C++, GO, JAVA, JavaScript, Python
+
+<br><br>
+Download temlate_c++.cpp 
+<br><br>
+Powershell
+
+```
+(Invoke-WebRequest https://raw.githubusercontent.com/sungmen/Solve_Algorithms/master/template_c%2B%2B.cpp).Content > ./temlate_c++.cpp
+```
+
+<br>
+Ubuntu
+
+```
+wget https://raw.githubusercontent.com/sungmen/Solve_Algorithms/master/template_c%2B%2B.cpp
+```
