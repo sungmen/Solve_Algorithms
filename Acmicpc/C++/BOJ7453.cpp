@@ -8,7 +8,6 @@ int main() {
         cin >> a[i] >> b[i] >> c[i] >> d[i];
     }
     vector<int> ab, cd;
-    int cntZero = 0, cntZero2 = 0;
     for(int i = 0 ; i < n; i++) {
         for(int j = 0; j < n; j++) {
             ab.emplace_back(a[i] + b[j]);
