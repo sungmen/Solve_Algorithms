@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define fest ios_base::sync_with_stdio(false),cin.tie(nullptr),cout.tie(nullptr);
+#define fast ios_base::sync_with_stdio(false),cin.tie(nullptr),cout.tie(nullptr);
 #define ll long long
 #define ul unsigned long long
 #define lb(x) lower_bound(x)
@@ -16,7 +16,7 @@ using namespace std;
 #define per(x,y,z) for(int x=y;x>=z;x--)
 #define all(x) x.begin(),x.end()
 int main() {
-    fest
+    fast
     int c;
     for(cin>>c;c--;){
         
