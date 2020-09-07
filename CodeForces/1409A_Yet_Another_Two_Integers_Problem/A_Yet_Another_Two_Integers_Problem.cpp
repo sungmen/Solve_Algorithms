@@ -17,8 +17,15 @@ using namespace std;
 #define all(x) x.begin(),x.end()
 int main() {
     fast
-    int c;
-    for(cin>>c;c--;){
-        
+    int t;
+    for(cin>>t;t--;){
+        int a, b;
+        cin >> a >> b;
+        int c = abs(a-b);
+        int ans = c / 10;
+        if(c%10) {
+            ans += 1;
+        }
+        cout << ans << '\n';
     }
 }

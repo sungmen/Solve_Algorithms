@@ -17,8 +17,17 @@ using namespace std;
 #define all(x) x.begin(),x.end()
 int main() {
     fast
-    int c;
-    for(cin>>c;c--;){
-        
+    int t;
+    for(cin>>t;t--;){
+        ll a, b, x, y, n; cin >> a >> b >> x >> y >> n;
+        if(max(a-n, x) < max(b-n, y)) {
+            ll tmp = max(a-n, x);
+            tmp = n - (a - tmp);
+            cout << max(a-n, x) * max(b-tmp, y) << '\n';
+        } else {
+            ll tmp = max(b-n, y);
+            tmp = n - (b - tmp);
+            cout << max(a-tmp, x) * max(b-n, y) << '\n'; 
+        }
     }
 }
