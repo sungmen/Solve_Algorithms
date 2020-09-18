@@ -16,6 +16,7 @@ using namespace std;
 #define per(x,y,z) for(int x=y;x>=z;x--)
 #define all(x) x.begin(),x.end()
 int main() {
+    // freopen("input.txt", "r", stdin);
     fast
     int c;
     for(cin>>c;c--;){
