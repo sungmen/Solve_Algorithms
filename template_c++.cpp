@@ -17,6 +17,7 @@ using namespace std;
 #define all(x) x.begin(),x.end()
 int main() {
     // freopen("input.txt", "r", stdin);
+    // freopen("output.txt", "w", stdout);
     fast
     int c;
     for(cin>>c;c--;){
