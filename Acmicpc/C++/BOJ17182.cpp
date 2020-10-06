@@ -21,7 +21,6 @@ void dfs(int k, int res, int p) {
     return;
 }
 int main() {
-    // freopen("input.txt", "r", stdin);
     ios_base::sync_with_stdio(false), cin.tie(nullptr), cout.tie(nullptr);
     int k; 
     cin >> n >> k;
