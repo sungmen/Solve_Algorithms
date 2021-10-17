@@ -1,45 +1,32 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define MAX 4000001
-
-vector<int> prime;
-
-void is_Prime(int n) {
-    prime.emplace_back(0);
-    prime.emplace_back(2);
-    for(int i = 3; i <= n; i++) {
-        int flag = 1;
-        for(int j = 2; j < int(sqrt(i))+1; j++) {
-            if(!(i%j)) {
-                flag = 0;
-                break;
+const int MAX = 4e6 + 1;
+bool chk[MAX];
+vector<int> prim;
+int main() {
+    // freopen("input.in", "r", stdin);
+    ios_base::sync_with_stdio(false), cin.tie(nullptr), cout.tie(nullptr);
+    memset(chk, 1, sizeof(chk));
+    int n; cin >> n;
+    chk[0] = chk[1] = 0;
+    for (int i = 2; i <= n; ++i) {
+        if (chk[i]) {
+            prim.push_back(i);
+            for (int j = i + i; j <= n; j += i) {
+                chk[j] = 0;
             }
         }
-        if(flag) {
-            prime.emplace_back(i);
-        }
     }
-}
-
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    int t;
-    cin >> t;
-    is_Prime(t);
-
-    int cnt = 0;
-    int end = 0;
-    int sum = 0;
-    for(int i = 1; i < prime.size(); i++) {
-        sum += prime[i];
-        while(sum > t) {
-            sum -= prime[(++end)];
+    int cnt = 0, end = 0, sum = 0;
+    for (int i = 0; i < prim.size(); ++i) {
+        sum += prim[i];
+        while (sum > n) {
+            sum -= prim[end++];
         }
-        if(sum == t) {
-            cnt++;
+        if (sum == n) {
+            ++cnt;
         }
     }
     cout << cnt;
+    return 0;
 }
