@@ -6,11 +6,10 @@ int main() {
     int t; cin >> t;
     while (t--) {
         int n; cin >> n;
-        int p = pow(n, 1/2.);
-        int pp = pow(n, 1/3.);
-        int ppp = pow(pp, 1/2.);
-        if (n == 1000000000) cout << p + pp - ppp + 1 << '\n';
-        else cout << p + pp - ppp << '\n';
+        int p = sqrt(n);
+        int pp = cbrt(n);
+        int ppp = sqrt(pp);
+        cout << p + pp - ppp << '\n';
     }
     return 0;
 }
