@@ -1,23 +1,16 @@
-class Solution 
-{
-private:
-    unordered_map<int, vector<int>> um;
+class Solution {
 public:
-    Solution(vector<int>& nums) 
-    {
-        for (int i = 0; i < nums.size(); i++)
-        {
-            um[nums[i]].push_back(i);
-        }
+  unordered_map<int, vector<int>> um;
+  Solution(vector<int> &nums) {
+    for (int idx = 0; idx < nums.size(); idx++) {
+      um[nums[idx]].push_back(idx);
     }
-    
-    int pick(int target) 
-    {
-        vector<int> v = um[target];
-        int n = v.size();
-        int t = rand() % n;
-        return v[t];
-    }
+  }
+
+  int pick(int target) {
+    int si = um[target].size();
+    return um[target][rand() % si];
+  }
 };
 
 /**
