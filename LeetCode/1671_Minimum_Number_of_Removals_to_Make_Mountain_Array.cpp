@@ -1,7 +1,6 @@
 class Solution {
 public:
   int minimumMountainRemovals(vector<int> &nums) {
-    unordered_map<int, int> up, down;
     int n = nums.size();
     vector<int> upper(n, 1);
     vector<int> downv(n, 1);
